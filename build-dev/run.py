@@ -24,4 +24,4 @@ PORT = 8000
 httpd = socketserver.TCPServer(("", PORT), MyHttpHandler)
 logging.info('escutando a porta : %s', PORT)
 logging.info('usuarioa : %s', getpass.getuser())
-httpd.server_forever()
+httpd.serve_forever()
